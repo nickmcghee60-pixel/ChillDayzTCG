@@ -1,5 +1,5 @@
 #!/user/bin/env python
-
+import os
 VERSION = "0.1"
 
 DECK_SIZE_MINIMUM = 40
@@ -7,8 +7,8 @@ STARTING_HAND_SIZE = 6
 PACK_PRICE = 100
 CHALLENGE_TIMEOUT = 30 #How long to wait for someone to accept a challenge
 TURN_TIMEOUT = 300 #How long to wait for someone to do an action on their turn before they forfeit the match
-TOKEN = '' #secret
-
+TOKEN = os.getenv("TOKEN")
+PREFIX = os.getenv("PREFIX", "!")
 DEFINITIONS = {
 	"lifeforce": "Your primary resource. You use this to pay card and Node costs. If it reaches 0, you lose.",
 	"node": "An object that stays on the board. They can have spawn abilities, death abilities, and abilities that activate on each of your turns.",
