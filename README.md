@@ -30,3 +30,4 @@ To add cards, use the New Card.py file and "fill in the blanks".
 [Custom Card Documentation](https://github.com/Pazda/discordTCG/wiki)
 
 To add nodes, do the same with New Node.py.
+redeploy
